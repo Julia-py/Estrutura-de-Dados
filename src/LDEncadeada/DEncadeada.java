@@ -46,9 +46,9 @@ public class DEncadeada {
             primeiro = novo;
 
         }else if (index == Tlista) { //final
-            No ultimo = get(index-1);
-            ultimo.setProximo(novo);
-            novo.setAnterior(ultimo);
+            No anterior = get(index-1);
+            anterior.setProximo(novo);
+            novo.setAnterior(anterior);
             novo.setProximo(null);
 
         }else{ //meio
